@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+
+}
+
+
+.container {
+    
+}
+
+
+.header {
+    background-color: red;
+}
+
+
+.sidebar {
+    background-color: green;
+}
+
+.navbar {
+    background-color: blue;
+}
+
+.dashboard {
+    background-color: orange;
+}
