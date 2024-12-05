@@ -1,27 +1,46 @@
 body {
     margin: 0px;
-
-}
-
-
-.container {
     
 }
 
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 8fr 1fr;
+    
+}
 
 .header {
     background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 6;
 }
 
 
 .sidebar {
     background-color: green;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .navbar {
     background-color: blue;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .dashboard {
     background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.footer {
+    background-color: brown;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
