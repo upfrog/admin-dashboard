@@ -302,12 +302,19 @@ Most icons are #FFFFFF
     border-left: solid #e8a02e 10px;
     background-color: var(--background-white);
     border-radius: var(--dash-element-border-radius);
+
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
 }
+
 
 .projectcard h3 {
     font-family: roboto;
     font-size: 20px;
     font-weight: 100;
+    margin: 0px;
     
 }
 
@@ -315,6 +322,22 @@ Most icons are #FFFFFF
     font-family: roboto-medium;
     color: var(--content-font-color);
     font-weight: 500;
+
+    
+}
+
+.projectcard .controls {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    margin-top: 5px;
+    display: flex;
+    
+
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-end;
+
 }
 
 
