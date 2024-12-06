@@ -26,7 +26,7 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 7fr;
+    grid-template-columns: 2fr 8fr;
     grid-template-rows: 1fr 1fr 15fr; /*Add 1fr for footer*/
     
 }
@@ -134,16 +134,39 @@ Most icons are #FFFFFF
 
 
 
-    /*buttonification!*/
-    cursor: pointer;
-    background-color: orange;
-    margin:15px;
-    width: 65%;
-    border-radius: 30px;
-    mar:0px;    
+    
     
 
 }
+
+
+.sidebar ul li a {
+    /*buttonification!*/
+    cursor: pointer;
+    margin: 4px;
+    width: 300px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+
+    /*transition: background-color 0.3s ease, color 0.3s ease;*/
+    opacity: 1; /* Initial opacity */
+    transition: opacity 0.5s ease; /* Animates opacity */
+
+}
+
+
+.sidebar ul li a:hover {
+    /*
+    background-color: var(--accent-color);
+    color: #4580b8;
+    */
+    opacity: 0.6;
+
+}
+    
 
 .sidebar ul button {
     border: none;
@@ -158,9 +181,7 @@ Most icons are #FFFFFF
     border-radius: 30px;
 }
 
-.sidebar ul button:hover {
-    background-color: red;
-}
+
 
 .sidebar ul li a {
     text-decoration: none;
