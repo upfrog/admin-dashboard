@@ -44,6 +44,22 @@ body {
 .header .logo {
     grid-column-start: 1;
     grid-column-end: 2;
+    font-family: var(--content-font);
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+
+    
+
+}
+
+.header .logo img {
+    transform: scale(.6);
+}
+
+.header .logo p {
+    color: white;
+    font-size: 32px;
 }
 
 
@@ -130,7 +146,7 @@ Most icons are #FFFFFF
     gap: 10px;
     padding: 3px 0;
     margin: 0px;
-    font-size: 32px;
+    font-size: 28px;
 
 
 
@@ -166,21 +182,6 @@ Most icons are #FFFFFF
     opacity: 0.6;
 
 }
-    
-
-.sidebar ul button {
-    border: none;
-    width: 300px;
-
-    /*background-color: var(--accent-color);*/
-    background-color: green;
-    font-size: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 30px;
-}
-
 
 
 .sidebar ul li a {
@@ -285,26 +286,25 @@ Most icons are #FFFFFF
     padding-bottom: 60px;
     display: grid;
     grid-column-start: 1;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /*grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));*/
+    
     justify-items: center;
     gap: 30px;
-    /*
-    Consider this for better-defined behavior
-    max-height: 80%;
-    overflow: auto;
-    */
+    overflow: auto
+    
 }
 
 .projectcard {
    
     
-    padding: 20px;
+    padding: 20px 0px 0px 20px ;
     border-left: solid #e8a02e 10px;
     background-color: var(--background-white);
     border-radius: var(--dash-element-border-radius);
-
-    display: flex;
-    flex-direction: column;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     
     position: relative;
 }
@@ -322,40 +322,44 @@ Most icons are #FFFFFF
     font-family: roboto-medium;
     color: var(--content-font-color);
     font-weight: 500;
+    margin: 5px 0px 0px 0px;
+    max-height: 200px;
+    
 
     
 }
 
 .projectcard .controls {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    margin-top: 5px;
+    
+    justify-self: end;
+    bottom: 5px;
+    right: 3px;
     display: flex;
     
 
     flex-direction: row;
     gap: 5px;
     justify-content: flex-end;
-
+    height: 65px;
+    
     
 
 }
 
 .projectcard .controls button {
-    /*background-color: var(--background-white);*/
+    background-color: var(--background-white);
    
     border-radius: 100%;
     transform: scale(.75);
     border: none;
     cursor: pointer; 
+    padding: 0px;
 
-    opacity: 1; /* Initial opacity */
-    transition: opacity 0.5s ease;
+    
 }
 
 .projectcard .controls button:hover {
-    /*background-color: blue;*/
+    background-color: var(--background-gray);
 }
 
 .projectcard .controls button img {
