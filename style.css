@@ -365,7 +365,7 @@ Most icons are #FFFFFF
 .siteinfo {
     display: grid;
     grid-template-columns: 1fr;
-    /*grid-template-rows: 1fr .1fr 1fr;*/
+    grid-template-rows: repeat(3, min-content);
     margin-right: 30px;
     padding-bottom: 60px;
     
