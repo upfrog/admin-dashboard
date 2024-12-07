@@ -26,9 +26,8 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 8fr;
-    grid-template-rows: 1fr 1fr 15fr; /*Add 1fr for footer*/
-    
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 80px 80px 1fr;
 }
 
 /*HEADER CSS*/
@@ -37,8 +36,6 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
     /*display: grid;*/
-    max-height: 80px;
-
 }
 
 .header .logo {
@@ -48,9 +45,6 @@ body {
     display: flex;
     flex-direction: row;
     padding-left: 20px;
-
-    
-
 }
 
 .header .logo img {
@@ -262,7 +256,7 @@ Most icons are #FFFFFF
     grid-column-end: 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: .5fr 5fr;
+    grid-template-rows: 75px 5fr;
     gap: 0px;
 }
 
@@ -430,6 +424,13 @@ Most icons are #FFFFFF
 .siteinfo .trending {
     background-color: var(--background-white);
 } */
+
+
+.footer {
+
+}
+
+
 
 
 /*
