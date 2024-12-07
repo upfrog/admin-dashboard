@@ -338,6 +338,28 @@ Most icons are #FFFFFF
     gap: 5px;
     justify-content: flex-end;
 
+    
+
+}
+
+.projectcard .controls button {
+    /*background-color: var(--background-white);*/
+   
+    border-radius: 100%;
+    transform: scale(.75);
+    border: none;
+    cursor: pointer; 
+
+    opacity: 1; /* Initial opacity */
+    transition: opacity 0.5s ease;
+}
+
+.projectcard .controls button:hover {
+    /*background-color: blue;*/
+}
+
+.projectcard .controls button img {
+    transform: scale(.6); 
 }
 
 
